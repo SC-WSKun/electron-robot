@@ -1,0 +1,58 @@
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home__search{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.tab-card{
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__box{
+        width: 100%;
+        height: 18vw;
+        min-height: 72px;
+        padding: 8px 16px;
+        display: flex;
+        gap: 16px;
+    }
+
+    &__img{
+        aspect-ratio: 1;
+        border-radius: 16.7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f2f4;
+        img{
+            width: 50%;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &__title{
+            font-size: 16px;
+            font-weight: 400;
+            color: #111418;
+        }
+
+        &__sub-title{
+            color: #637588;
+        }
+    }
+}
