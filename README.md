@@ -1,8 +1,5 @@
 # electron-robot
-本项目基于vite-react-electron，下面是该项目的一些介绍。
-[![awesome-vite](https://awesome.re/mentioned-badge.svg)](https://github.com/vitejs/awesome-vite)
-![GitHub stars](https://img.shields.io/github/stars/caoxiemeihao/vite-react-electron?color=fa6470)
-![GitHub issues](https://img.shields.io/github/issues/caoxiemeihao/vite-react-electron?color=d8b22d)
+本项目基于vite-react-electron，用于机器人虚拟形象展示。主要功能为加载3D模型与大模型语音交互。
 ![GitHub license](https://img.shields.io/github/license/caoxiemeihao/vite-react-electron)
 [![Required Node.JS >= 14.18.0 || >=16.0.0](https://img.shields.io/static/v1?label=node&message=14.18.0%20||%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
 
