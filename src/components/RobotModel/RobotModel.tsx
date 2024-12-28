@@ -22,8 +22,9 @@ type GLTFResult = GLTF & {
   animations: any
 }
 
+const modelPath = '/robot-model.glb'
 export function RobotModel(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/robot-model.glb') as GLTFResult
+  const { nodes, materials } = useGLTF(modelPath) as GLTFResult
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Group18985_default_0.geometry} material={materials['default']} rotation={[-Math.PI / 2, 0, 0]} />
@@ -31,4 +32,4 @@ export function RobotModel(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/robot-model.glb')
+useGLTF.preload(modelPath)

@@ -52,3 +52,6 @@ export default {
 ```
 -->
 
+## gltf文件处理
+[gltfjsx](https://github.com/pmndrs/gltfjsx)
+
