@@ -23,6 +23,7 @@
     "@react-three/drei": "^9.119.0",
     "@react-three/fiber": "^8.17.10",
     "@types/three": "^0.170.0",
+    "baidu-aip-sdk": "^4.16.16",
     "electron-updater": "^6.3.9",
     "react-router": "^7.0.1",
     "three": "^0.170.0"
