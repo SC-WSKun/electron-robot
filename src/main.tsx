@@ -7,6 +7,7 @@ import './index.css'
 import './demos/ipc'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import { Communicate } from './pages/Communicate'
+import Navigation from './pages/Navigation'
 // If you want use Node.js, the`nodeIntegration` needs to be enabled in the Main process.
 // import './demos/node'
 
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/communicate" element={<Communicate />} />
+        <Route path='/navigation' element={<Navigation/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

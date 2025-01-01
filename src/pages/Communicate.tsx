@@ -2,7 +2,12 @@ import { Canvas, useFrame, ThreeElements } from '@react-three/fiber'
 import { RobotModel } from '@/components/RobotModel/RobotModel'
 import './style/Communicate.less'
 import { WangcaiModel } from '@/components/RobotModel/Wangcai'
+import { useNavigate } from 'react-router'
 export const Communicate = () => {
+    const navigate = useNavigate()
+    const goHome = () => {
+        navigate('/')
+    }
     return (
         <div className="communicate__container">
             <div className='communicate__model'>
@@ -14,7 +19,7 @@ export const Communicate = () => {
                 </Canvas>
             </div>
             <div className='communicate__control'>
-                
+                <button className='communicate__btn' onClick={goHome}>返回首页</button>
             </div>
         </div>
     )
