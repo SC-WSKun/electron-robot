@@ -1,7 +1,7 @@
 # electron-robot
 本项目基于vite-react-electron，用于机器人虚拟形象展示。主要功能为加载3D模型与大模型语音交互。
-![GitHub license](https://img.shields.io/github/license/caoxiemeihao/vite-react-electron)
-[![Required Node.JS >= 14.18.0 || >=16.0.0](https://img.shields.io/static/v1?label=node&message=14.18.0%20||%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
+
+[![Required Node.JS 20.18.1](https://img.shields.io/static/v1?label=node&message=20.18.1&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
 
 ## 快速开始
 
@@ -53,5 +53,5 @@ export default {
 -->
 
 ## gltf文件处理
-[gltfjsx](https://github.com/pmndrs/gltfjsx)
+[gltfjsx](https://github.com/pmndrs/gltfjsx) 可以帮助生成gltf文件对应的jsx文件
 
