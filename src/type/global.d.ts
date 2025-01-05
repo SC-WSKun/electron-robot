@@ -1,7 +1,10 @@
 type Label = {
-    name: string;
-    position: {
-        x: number;
-        y: number;
-    };
+    label_name: string,
+    pose: {
+      position: {
+        x: number,
+        y: number,
+        z: number,
+      },
+    },
 }
