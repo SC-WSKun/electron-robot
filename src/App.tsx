@@ -1,18 +1,25 @@
 import "./global.less";
 import searchIcon from "./assets/svg/search.svg";
-import batteryIcon from "./assets/svg/battery.svg";
+import robotIcon from "@/assets/svg/robot.svg"
+import configIcon from "@/assets/svg/config.svg"
 import navigationIcon from "./assets/svg/navigation.svg";
 import communicateIcon from "./assets/svg/communicate.svg";
-import { useNavigate } from "react-router";
 import Header from "./components/Header/Header";
+import TabCard from "./components/TabCard/TabCard";
 
 function App() {
   const tabConfig = [
     {
-      title: "Battery 100%",
-      subTitle: "2h ago",
-      icon: batteryIcon,
-      target: "/battery",
+      title: "Robot",
+      subTitle: "check infomation of robot",
+      icon: robotIcon,
+      target: "/info",
+    },
+    {
+      title: "Config",
+      subTitle: "config infomation of robot",
+      icon: configIcon,
+      target: "/config",
     },
     {
       title: "Navigation",
@@ -28,7 +35,7 @@ function App() {
     },
   ];
   return (
-    <div className="app">
+    <div className="app-container">
       <div style={{marginTop: '1rem'}}>
         <Header title="Robot Controller" isHomePage={true} />
       </div>
@@ -41,29 +48,7 @@ function App() {
   );
 }
 
-interface ITabCard {
-  title: string;
-  subTitle: string;
-  icon: string;
-  target: string;
-}
-const TabCard = (props: ITabCard) => {
-  const navigate = useNavigate();
-  const { title, subTitle, icon, target } = props;
-  const navigatePage = () => {
-    navigate(target);
-  };
-  return (
-    <div className="tab-card__box" onClick={navigatePage}>
-      <div className="tab-card__img">
-        <img src={icon}></img>
-      </div>
-      <div className="tab-card__content">
-        <div className="tab-card__content__title">{title}</div>
-        <div className="tab-card__content__sub-title">{subTitle}</div>
-      </div>
-    </div>
-  );
-};
+
+
 
 export default App;
