@@ -1,6 +1,10 @@
 # electron-robot
 本项目基于vite-react-electron，用于机器人虚拟形象展示。主要功能为加载3D模型与大模型语音交互。
 
+- [x] 3D模型引入
+- [x] 标签导航模块
+- [ ] 语音交互模块
+
 [![Required Node.JS 20.18.1](https://img.shields.io/static/v1?label=node&message=20.18.1&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
 
 ## 快速开始
